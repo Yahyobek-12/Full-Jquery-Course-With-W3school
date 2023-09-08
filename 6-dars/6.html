@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>6-dars</title>
+
+    <script>
+
+        $(document).ready(function(){
+            $('h1').dblclick(function(){
+                $(this).hide();
+            })
+        })
+
+        $(document).ready(function(){
+            $('#h2').mouseenter(function(){
+                alert('You entered h2')
+            })
+        })
+
+        $(document).ready(function(){
+            $('#h3').hover(function(){
+                alert('You entered h2')
+            })
+        })
+
+        $(document).ready(function(){
+            $('#h4').mouseup(function(){
+                alert('You entered h2')
+            })
+        })
+
+        $(document).ready(function(){
+            $('hi').focus(function(){
+                $(this).css('background-color', '$09f')
+            })
+        })
+
+
+
+    </script>
+
+</head>
+<body>
+    
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <h2 id="h2">Hi</h2>
+
+    <h3 id="h3">Hello</h3>
+
+    <h1 id="h4">World</h1>
+    <h1><p id="hi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, culpa.</p></h1>
+
+</body>
+</html>

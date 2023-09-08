@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>2-dars</title>
+
+    <style>
+
+        button{
+            display: block;
+            margin-top: 10px;
+        }
+
+    </style>
+
+    <script>
+        // btn
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(this).hide();
+            })
+        })
+
+        // btn-1
+        $(document).ready(function(){
+            $(".btn-1").click(function(){
+                $("p:first").hide();
+            })
+        })
+
+        // btn-2
+        $(document).ready(function(){
+            $(".btn-2").click(function(){
+                $("ul li:first").hide();
+            })
+        })
+
+        // btn-3
+        $(document).ready(function(){
+            $(".btn-3").click(function(){
+                $("ul li:first-child").hide();
+            });
+        });
+
+        // btn-4
+        $(document).ready(function(){
+            $(".btn-4").click(function(){
+                $("[href]").hide();
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+    
+    <h1>This is a heading </h1>
+
+    <p>This is a Paragraph</p>
+    <p>This is another paragraph.</p>
+
+    <ul>
+        <li>Hi</li>
+        <li>Hello</li>
+        <li>Good by</li>
+    </ul>
+
+    <a href="#">Html</a>
+    <a href="#">Jquery</a>
+
+    <button class="btn"> Hide me </button>
+
+    <button class="btn-1">Click me</button>
+
+    <button class="btn-2">Click me</button>
+
+    <button class="btn-3">Click me</button>
+
+    <button class="btn-4">Click me</button>
+
+</body>
+</html>

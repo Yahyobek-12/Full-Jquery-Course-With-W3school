@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>1-dars</title>
+
+    <style>
+
+        img{
+            width: 300px;
+        }
+
+        .btn{
+            display: block;
+            margin-top: 20px;
+        }
+
+        .btn-1{
+            margin-top: 20px;
+            display: block;
+        }
+
+        button{
+            margin-top: 20px;
+        }
+
+    </style>
+
+    <script>
+
+        // btn
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $("img").hide();
+            })
+        })
+
+        // btn-1
+        $(document).ready(function(){
+            $(".btn-1").click(function(){
+                $("img").show();
+            })
+        })
+
+        // btn-2
+        $(document).ready(function(){
+            $(".btn-2").click(function(){
+                $("*").hide();
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+    
+    <h2>This is a heading</h2>
+
+    <img src="/Jquery/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <button class="btn">Click me to hide img</button>
+
+    <button class="btn-1">Click me to show img</button>
+
+    <button class="btn-2">Click me to hide all things</button>
+    
+
+
+</body>
+</html>

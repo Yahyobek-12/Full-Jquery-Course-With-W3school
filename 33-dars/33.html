@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>33-dars</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+function afterText(){
+  var text1 = 'I love'
+  var text2 = 'Jquery'
+
+  text3 = text1 + text2
+  $('img').after(text3)
+}
+</script>
+</head>
+<body>
+
+<img src="/img/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="jQuery" width="200" height="140">
+
+<p>Click the button to insert text after the image.</p>
+
+<button onclick="afterText()">Insert after</button>
+<button onclick="beforeText()">Insert before</button>
+
+</body>
+</html>

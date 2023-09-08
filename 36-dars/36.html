@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>36-dars</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $('p').slideUp(500, function(){
+      $("p").hide(".test")
+      $('p').css('color','#09f')
+    })
+  });
+
+  $(".btn2").click(function(){
+    $('p').slideUp(500, function(){
+      $("p").show(".test")
+      $('p').css('color','#09f')
+      $('p').css('font-size','3rem')
+      $('p').css('font-family','cursive')
+      $('p').css('text-shadow','2px 3px 5px #f0f')
+    })
+  });
+});
+</script>
+<style>
+.test {
+  color: red;
+  font-size: 20px;
+}
+button{
+  display: block;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<p class="test">This is a paragraph.</p>
+<p class="test">This is another paragraph.</p>
+<p class="test">This is another paragraph.</p>
+
+<button class="btn1">Remove all p elements with class="test"</button>
+<button class="btn2">Remove all p elements with class="test"</button>
+
+</body>
+</html>
