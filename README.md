@@ -1,1 +1,2 @@
-# Full-Jquery-Course-With-W3school
+# Jquery Course 📖
+# From New World Technologies
